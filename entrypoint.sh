@@ -5,4 +5,4 @@ then
     sqlite3 /pdns.sqlite3 < /setup.sql
 fi
 
-/usr/sbin/pdns_server
+/usr/sbin/pdns_server $@
