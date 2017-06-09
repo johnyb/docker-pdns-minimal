@@ -10,7 +10,7 @@ VOLUME /data
 
 RUN yum -y update &&\
     yum -y install epel-release yum-plugin-priorities &&\
-    curl -o /etc/yum.repos.d/powerdns-auth-40.repo https://repo.powerdns.com/repo-files/centos-auth-40.repo &&\
+    curl -o /etc/yum.repos.d/powerdns-auth-master.repo https://repo.powerdns.com/repo-files/centos-auth-master.repo &&\
     yum -y install pdns pdns-backend-sqlite &&\
     yum clean all
 
